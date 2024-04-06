@@ -30,7 +30,7 @@ body {
 
 .side-nav {
   width: 250px;
-  height: 123.5%;
+  height: 163%;
   margin-top: 116px;
   position: absolute;
   top: 0;
@@ -106,8 +106,36 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 20px
-
+  gap: 20px;
+  border-bottom: 5px solid #009688;
+  padding-bottom: 20px;
+}
+.card-container2 {
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-bottom: 5px solid #009688;
+  padding-bottom: 20px;
+}
+.card-container3 {
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-bottom: 5px solid #009688;
+  padding-bottom: 20px;
+}
+.card-container4 {
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-bottom: 5px solid #009688;
+  padding-bottom: 20px;
 }
 
 form {
@@ -179,13 +207,18 @@ a {
   justify-content: start;
   flex-direction: column;
   padding: 10px;
+  padding-bottom: 30px;
+
 }
 
+.sensors-data {
+  margin-left: 100px;
+}
 .sensors-data p{
   margin: 0;
 }
 .real-time{ 
-  margin-left: 150px;
+  margin-left: 200px;
 } 
 
 

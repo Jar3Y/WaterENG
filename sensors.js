@@ -17,3 +17,4 @@ const firebaseConfig = {
   const auth = getAuth(app);
   const db = getFirestore(app);
   const database = getDatabase(app);
+  
