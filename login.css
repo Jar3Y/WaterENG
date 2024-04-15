@@ -9,6 +9,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 body{
     background-image:linear-gradient(rgba(46, 41, 41, 0.8),rgba(46, 41, 41, 0.8)),url("images/backgroundimage.jpg");
     display: flex;

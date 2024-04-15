@@ -5,7 +5,12 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="home.css" />
     <script src="home.js"></script>
-    <script type="module" src="sensors.js" defer></script>
+    <script type="module" src="pipe1.js" defer></script>
+    <script type="module" src="pipe2.js" defer></script>
+    <script type="module" src="pipe3.js" defer></script>
+    <script type="module" src="pipe4.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
   </head>
   <body>
     <div class="container2">
@@ -48,22 +53,12 @@
       </div>
       <div class="main">
         <h3>Dashboard</h3>
+        <!-- first pipe -->
         <div class="card-container">
           <div class="SC">
             <h4>Select Crops</h4>
-            <form>
-              <div id="dropdownContainer">
-                <div class="form-group">
-                  <label for="Crops">Pipe 1:</label>
-                  <select>
-                    <option value="Carrots">Carrots</option>
-                    <option value="Eggplant">Eggplant</option>
-                    <option value="Potato">Potato</option>
-                    <option value="Garlic">Garlic</option>
-                  </select>
-                </div>
-              </div>
-            </form>
+            <input type="text" id="searchBox" placeholder="Search plant..." />
+            <ul id="plantList"></ul>
             <div class="button">
               <button type="Water" onclick="submitForm()">Monitor</button>
             </div>
@@ -78,25 +73,17 @@
           </div>
           <div class="real-time">
             <h4>Requirements</h4>
+            <div class="rq-container">
+              <div id="displayArea"></div>
+            </div>
           </div>
-          
         </div>
+        <!-- second pipe -->
         <div class="card-container2">
           <div class="SC">
             <h4>Select Crops</h4>
-            <form>
-              <div id="dropdownContainer">
-                <div class="form-group">
-                  <label for="Crops">Pipe 1:</label>
-                  <select>
-                    <option value="Carrots">Carrots</option>
-                    <option value="Eggplant">Eggplant</option>
-                    <option value="Potato">Potato</option>
-                    <option value="Garlic">Garlic</option>
-                  </select>
-                </div>
-              </div>
-            </form>
+            <input type="text" id="searchBox2" placeholder="Search plant..." />
+            <ul id="plantList2"></ul>
             <div class="button">
               <button type="Water" onclick="submitForm()">Monitor</button>
             </div>
@@ -111,25 +98,17 @@
           </div>
           <div class="real-time">
             <h4>Requirements</h4>
+            <div class="rq-container">
+              <div id="displayArea2"></div>
+            </div>
           </div>
-          
         </div>
+        <!-- third pipe -->
         <div class="card-container3">
           <div class="SC">
             <h4>Select Crops</h4>
-            <form>
-              <div id="dropdownContainer">
-                <div class="form-group">
-                  <label for="Crops">Pipe 1:</label>
-                  <select>
-                    <option value="Carrots">Carrots</option>
-                    <option value="Eggplant">Eggplant</option>
-                    <option value="Potato">Potato</option>
-                    <option value="Garlic">Garlic</option>
-                  </select>
-                </div>
-              </div>
-            </form>
+            <input type="text" id="searchBox3" placeholder="Search plant..." />
+            <ul id="plantList3"></ul>
             <div class="button">
               <button type="Water" onclick="submitForm()">Monitor</button>
             </div>
@@ -144,25 +123,17 @@
           </div>
           <div class="real-time">
             <h4>Requirements</h4>
+            <div class="rq-container">
+              <div id="displayArea3"></div>
+            </div>
           </div>
-          
         </div>
+        <!-- fourth pipe -->
         <div class="card-container4">
           <div class="SC">
             <h4>Select Crops</h4>
-            <form>
-              <div id="dropdownContainer">
-                <div class="form-group">
-                  <label for="Crops">Pipe 1:</label>
-                  <select>
-                    <option value="Carrots">Carrots</option>
-                    <option value="Eggplant">Eggplant</option>
-                    <option value="Potato">Potato</option>
-                    <option value="Garlic">Garlic</option>
-                  </select>
-                </div>
-              </div>
-            </form>
+            <input type="text" id="searchBox4" placeholder="Search plant..." />
+            <ul id="plantList4"></ul>
             <div class="button">
               <button type="Water" onclick="submitForm()">Monitor</button>
             </div>
@@ -177,8 +148,10 @@
           </div>
           <div class="real-time">
             <h4>Requirements</h4>
+            <div class="rq-container">
+              <div id="displayArea4"></div>
+            </div>
           </div>
-          
         </div>
       </div>
     </div>

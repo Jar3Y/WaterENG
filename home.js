@@ -1,36 +1,36 @@
 
-function addDropdown() {
-    var dropdownContainer = document.getElementById("dropdownContainer");
-    var dropdownCount = dropdownContainer.querySelectorAll("select").length;
-    if (dropdownCount < 4) {
-    var newDropdown = document.createElement("div");
-    newDropdown.classList.add("form-group");
-    newDropdown.innerHTML = `
-      <label for="dropdown${dropdownCount + 1}">Pipe ${dropdownCount + 1}:</label>
-      <select id="dropdown${dropdownCount + 1}" name="dropdown${dropdownCount + 1}">
-          <option value="Carrots">Carrots</option>
-          <option value="Eggplant">Eggplant</option>
-          <option value="Potato">Potato</option>
-          <option value="Garlic">Garlic</option>
-      </select>`;
-    dropdownContainer.appendChild(newDropdown);
-    if (dropdownCount > 0) { 
-        var removeButton = document.createElement("button");
-        removeButton.type = "red";
-        removeButton.textContent = "Remove";
-        removeButton.onclick = function() {
-          dropdownContainer.removeChild(newDropdown);
-          dropdownCount--;
-          updateDropdownLabels();
-        };
-        newDropdown.appendChild(removeButton);
-      }
-      updateDropdownLabels();
-    } else {
-      alert("Maximum of Pipes reached.");
-    }
+// function addDropdown() {
+//     var dropdownContainer = document.getElementById("dropdownContainer");
+//     var dropdownCount = dropdownContainer.querySelectorAll("select").length;
+//     if (dropdownCount < 4) {
+//     var newDropdown = document.createElement("div");
+//     newDropdown.classList.add("form-group");
+//     newDropdown.innerHTML = `
+//       <label for="dropdown${dropdownCount + 1}">Pipe ${dropdownCount + 1}:</label>
+//       <select id="dropdown${dropdownCount + 1}" name="dropdown${dropdownCount + 1}">
+//           <option value="Carrots">Carrots</option>
+//           <option value="Eggplant">Eggplant</option>
+//           <option value="Potato">Potato</option>
+//           <option value="Garlic">Garlic</option>
+//       </select>`;
+//     dropdownContainer.appendChild(newDropdown);
+//     if (dropdownCount > 0) { 
+//         var removeButton = document.createElement("button");
+//         removeButton.type = "red";
+//         removeButton.textContent = "Remove";
+//         removeButton.onclick = function() {
+//           dropdownContainer.removeChild(newDropdown);
+//           dropdownCount--;
+//           updateDropdownLabels();
+//         };
+//         newDropdown.appendChild(removeButton);
+//       }
+//       updateDropdownLabels();
+//     } else {
+//       alert("Maximum of Pipes reached.");
+//     }
   
-  }
+//   }
   
   function submitForm() {
     var dropdownValues = [];
