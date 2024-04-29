@@ -9,8 +9,12 @@
     <script type="module" src="pipe2.js" defer></script>
     <script type="module" src="pipe3.js" defer></script>
     <script type="module" src="pipe4.js" defer></script>
+    <script type="module" src="sensors.js" defer></script>
     <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database-compat.js"></script>
+  
+   
   </head>
   <body>
     <div class="container2">
@@ -35,14 +39,17 @@
               <p>Dashboard</p>
             </li></a
           >
+          <a href="data.html"
+            ><li>
+              <img src="images/about.png" />
+              <p>Data Analytics</p>
+            </li></a
+          >
           <li>
             <img src="images/profile.png" />
             <p>Profile</p>
           </li>
-          <li>
-            <img src="images/about.png" />
-            <p>About Us</p>
-          </li>
+
           <a href="index.html"
             ><li class="logout" id="logout" type="button">
               <img src="images/logout.png" />
@@ -66,10 +73,10 @@
 
           <div class="sensors-data">
             <h4>Real-time Sensor's Data</h4>
-            <p>Temperature:</p>
-            <p>Humidity:</p>
-            <p>Soil Moisture:</p>
-            <p>Water Flow Rate:</p>
+            <div class="sensor-value" id="temperature">Temperature: --</div>
+            <div class="sensor-value" id="humidity"></div>
+            <div class="sensor-value" id="soilMoisture">Soil Moisture: --</div>
+            <div class="sensor-value" id="waterFlow">Water Flow Rate: --</div>
           </div>
           <div class="real-time">
             <h4>Requirements</h4>
