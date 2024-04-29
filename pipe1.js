@@ -20,8 +20,6 @@ const firebaseConfig = {
 
         function searchPlants(value) {
             plantList.innerHTML = ""; // Clear the plant list
-            displayArea.innerHTML = ""; // Clear the display area
-
             if (value === "") {
                 return; // Exit if search input is empty
             }
