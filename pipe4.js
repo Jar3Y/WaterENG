@@ -33,7 +33,7 @@ const firebaseConfig = {
                     listItem.addEventListener("click", function() {
                         displayArea4.innerHTML = `
                             <p><strong>Plant:</strong> ${data.plant}</p>
-                            <p><strong>Relative Humidity:</strong> ${data.relativeHumidity}</p>
+                            <p><strong>Relative Humidity:</strong> ${data.relativeHumidity}%</p>
                             <p><strong>Soil Moisture:</strong> ${data.soilMoisture}</p>
                             <p><strong>Average Temperature (°C):</strong> ${data.averageTemperatureC}</p>
                             <p><strong>Water Consumption:</strong> ${data.waterConsumptionLiterHour} liters/hour</p>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Password</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <script src="home.js"></script>
+    <script type="module" src="profile.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+  </head>
+  <body>
+    <div class="container2">
+        <div class="navbar2">
+          <img src="images\logo.jpg" class="logo2" />
+        </div>
+        <div class="side-nav">
+          <div class="user">
+            <img src="images/user.jpg" class="user-img" />
+            <div>
+              <h2 id="users"></h2>
+              <p id="emaildp"></p>
+            </div>
+  
+            <img src="images/verified.png" class="verified-img" />
+          </div>
+  
+          <ul>
+            <a href="home.html"
+              ><li>
+                <img src="images/dashboard.png" />
+                <p>Dashboard</p>
+              </li></a
+            >
+            <a href="data.html"
+              ><li>
+                <img src="images/about.png" />
+                <p>Data Analytics</p>
+              </li></a
+            >
+            <a href="profile.html"
+            ><li>
+                <img src="images/profile.png" />
+                <p>Profile</p>
+              </li></a
+            >
+  
+            <a href="index.html"
+              ><li class="logout" id="logout" type="button">
+                <img src="images/logout.png" />
+                <p>Logout</p>
+              </li></a
+            >
+          </ul>
+        </div>
+        <div class="main">
+
+            <!-- first pipe -->
+            <div class="card-container">
+              <div class="sensors-data">
+  
+                <div class="container">
+                    <h1>Change Password</h1>
+                    <form id="changePasswordForm">
+                        <input type="password" placeholder="Current Password" id="currentPassword" required>
+                        <input type="password" placeholder="New Password" id="newPassword" required>
+                        <div id="showPasswordContainer">
+                            <input type="checkbox" id="showPasswordCheckbox">
+                            <label for="showPasswordCheckbox" class="sp">Show password</label>
+                        </div>
+                        <button type="submit">Change</button>
+                    </form>
+                    <div id="message"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    
+        <script src="profile.js" defer></script>
+    </body>
+    </html>
+  </body>
+</html>

@@ -31,10 +31,10 @@ const dataRef7 = database.ref('test/Humidity');
 const dataRef8 = database.ref('test/Humidity');
 
 // Soil Moisture each pipes
-const dataRef9 = database.ref('test/Moisture1');
-const dataRef10 = database.ref('test/Moisture2');
-const dataRef11 = database.ref('test/Moisture3');
-const dataRef12 = database.ref('test/Moisture4');
+const dataRef9 = database.ref('test/Soil Moisture1');
+const dataRef10 = database.ref('test/Soil Moisture2');
+const dataRef11 = database.ref('test/Soil Moisture3');
+const dataRef12 = database.ref('test/Soil Moisture4');
 
 // Water Flow Rate each pipes
 const dataRef13 = database.ref('test/Water Flow1');

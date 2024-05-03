@@ -5,48 +5,75 @@
     <title>Data Analytics</title>
     <link rel="stylesheet" href="home.css" />
     <script src="home.js"></script>
+    <script type="module" src="data.js" defer></script>
+    <script type="module" src="hourly.js" defer></script>
+    <script type="module" src="dwater.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="logout.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+    
   </head>
   <body>
     <div class="container2">
-        <div class="navbar2">
-          <img src="images\logo.jpg" class="logo2" />
-        </div>
-        <div class="side-nav">
-          <div class="user">
-            <img src="images/user.jpg" class="user-img" />
-            <div>
-              <h2 id="users"></h2>
-              <p id="emaildp"></p>
-            </div>
-  
-            <img src="images/verified.png" class="verified-img" />
+      <div class="navbar2">
+        <img src="images\logo.jpg" class="logo2" />
+      </div>
+      <div class="side-nav">
+        <div class="user">
+          <img src="images/user.jpg" class="user-img" />
+          <div>
+            <h2 id="users"></h2>
+            <p id="emaildp"></p>
           </div>
-  
-          <ul>
-            <a href="home.html"
-              ><li>
-                <img src="images/dashboard.png" />
-                <p>Dashboard</p>
-              </li></a
-            >
-            <a href="data.html"
-              ><li>
-                <img src="images/about.png" />
-                <p>Data Analytics</p>
-              </li></a
-            >
-            <li>
+
+          <img src="images/verified.png" class="verified-img" />
+        </div>
+
+        <ul>
+          <a href="home.html"
+            ><li>
+              <img src="images/dashboard.png" />
+              <p>Dashboard</p>
+            </li></a
+          >
+          <a href="data.html"
+            ><li>
+              <img src="images/about.png" />
+              <p>Data Analytics</p>
+            </li></a
+          >
+          <a href="profile.html"
+          ><li>
               <img src="images/profile.png" />
               <p>Profile</p>
+            </li></a
+          >
+
+         
+            <li class="logout" id="logout" onclick="logout()">
+              <img src="images/logout.png" />
+              <p>Logout</p>
             </li>
-  
-            <a href="index.html"
-              ><li class="logout" id="logout" type="button">
-                <img src="images/logout.png" />
-                <p>Logout</p>
-              </li></a
-            >
-          </ul>
-        </div>
+       
+        </ul>
+      </div>
+        <div class="main">
+          <h3>Dashboard</h3>
+          <!-- first pipe -->
+          <div class="card-container5 ">
+            <div class="dailytemp-chart">
+              <canvas id="dailyTempChart" width="600" height="300"></canvas>
+            </div>
+            <div class="hourlytemp-chart">
+              <canvas id="hourlyTempChart" width="600" height="300"></canvas>
+            </div>
+          </div>
+          <div class="dailywater-chart">
+            <canvas id="dailyWaterChart" width="600" height="300"></canvas>
+          </div>
+          </div>
   </body>
 </html>

@@ -30,7 +30,7 @@ body {
 
 .side-nav {
   width: 250px;
-  height: 123.7%;
+  height: 163%;
   margin-top: 116px;
   position: absolute;
   top: 0;
@@ -138,6 +138,14 @@ body {
   padding-bottom: 20px;
 }
 
+.card-container5 {
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
 form {
   max-width: 250px;
   margin-right: auto;
@@ -218,32 +226,40 @@ a {
   margin: 0;
 }
 .real-time{ 
-  margin-left: 200px;
+  margin-left: 50px;
 } 
 
 .rq-container {
-  display: flex;
-  flex-direction: column;
+
   align-items: center;
-  margin-top: 70px;
+  margin-top: 0px;
 }
+
 .searchBox {
-  margin-bottom: 30px;
+
   padding: 10px;
-  width: 300px;
+  width: 200px;
   font-size: 16px;
 }
-.plantList {
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#plantList {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
 }
+
 #plantList li {
   display: flex;
   cursor: pointer;
   padding: 8px;
-  border-bottom: 1px solid #ccc;
-  width: 180px;
+  border-bottom: 1px solid #ccc;  
+  width: 100px;
+  font-size: 15px;
 }
 #plantList li:hover {
   background-color: #f0f0f0;
@@ -264,7 +280,7 @@ a {
   width: 300px;
   font-size: 16px;
 }
-.plantList2 {
+#plantList2 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -273,8 +289,9 @@ a {
   display: flex;
   cursor: pointer;
   padding: 8px;
-  border-bottom: 1px solid #ccc;
-  width: 180px;
+  border-bottom: 1px solid #ccc;  
+  width: 100px;
+  font-size: 15px;
 }
 #plantList2 li:hover {
   background-color: #f0f0f0;
@@ -295,7 +312,7 @@ a {
   width: 300px;
   font-size: 16px;
 }
-.plantList3 {
+#plantList3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -304,8 +321,9 @@ a {
   display: flex;
   cursor: pointer;
   padding: 8px;
-  border-bottom: 1px solid #ccc;
-  width: 180px;
+  border-bottom: 1px solid #ccc;  
+  width: 100px;
+  font-size: 15px;
 }
 #plantList3 li:hover {
   background-color: #f0f0f0;
@@ -326,7 +344,7 @@ a {
   width: 300px;
   font-size: 16px;
 }
-.plantList4 {
+#plantList4 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -335,8 +353,9 @@ a {
   display: flex;
   cursor: pointer;
   padding: 8px;
-  border-bottom: 1px solid #ccc;
-  width: 180px;
+  border-bottom: 1px solid #ccc;  
+  width: 100px;
+  font-size: 15px;
 }
 #plantList4 li:hover {
   background-color: #f0f0f0;
@@ -350,3 +369,20 @@ a {
   font-size: 19px;
 }
 
+/* DATA ANALYTICS */
+
+.dailytemp-chart{
+  border: 2px solid #009688;
+}
+
+.hourlytemp-chart{
+  border: 2px solid #009688;
+
+}
+
+.dailywater-chart{
+  border: 2px solid #009688;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; 
+}
