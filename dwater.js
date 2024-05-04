@@ -22,24 +22,22 @@ const dailyTempChart = new Chart(ctx, {
     data: {
         labels: ['Daily Water1', 'Daily Water2', 'Daily Water3', 'Daily Water4'],
         datasets: [{
-            label: 'Daily Temperature',
+            label: 'Daily Water Consumption',
             borderColor: 'rgba(255, 99, 132, 1)',
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
             data: [],
         }]
     },
     options: {
-        indexAxis: 'y',
-        scales: {
-            y: {
-                ticks: {
-                    crossAlign: 'far', // Itatakda ang ticks sa kanan ng axis
-                    beginAtZero: true
-                }
-            }
-        }
-    }
-});
+         scales: {
+             y: {
+                suggestedMin: 0, // Set the minimum value for the y-axis
+                suggestedMax: 100, // Set the maximum value for the y-axis  
+                 beginAtZero: true
+             }
+         }
+     }
+ });
 
 // Function to update chart
 function updateChart(dailyTemps) {

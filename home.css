@@ -116,7 +116,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  border-bottom: 5px solid #009688;
+  border-bottom: 5px solid rgb(0, 150, 136);
   padding-bottom: 20px;
 }
 .card-container3 {
@@ -236,7 +236,7 @@ a {
 }
 
 .searchBox {
-
+  margin-top: 20px;
   padding: 10px;
   width: 200px;
   font-size: 16px;
@@ -273,9 +273,20 @@ a {
   font-size: 19px;
 }
 
+.SC-flex-container{
+  margin: 0;
+}
+h4{
+  margin: 0;
+}
+.all-pipe{
+  margin-bottom: 20px;
+}
+
+
 /* PIPE 2 */
 .searchBox2 {
-  margin-bottom: 30px;
+  margin-top: 20px;
   padding: 10px;
   width: 300px;
   font-size: 16px;
@@ -307,6 +318,7 @@ a {
 
 /* PIPE 3 */
 .searchBox3 {
+  margin-top: 20px;
   margin-bottom: 30px;
   padding: 10px;
   width: 300px;
@@ -339,6 +351,7 @@ a {
 
 /* PIPE 4 */
 .searchBox4 {
+  margin-top: 20px;
   margin-bottom: 30px;
   padding: 10px;
   width: 300px;

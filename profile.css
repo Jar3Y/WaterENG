@@ -55,6 +55,396 @@ button:hover {
     margin-top: 6px;
 }
 
-.h1{
-    font-size: 20px;
+h1{
+    font-size: 40px;
 }
+
+/* HOME CSS */
+
+/*HOME PAGE*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container2 {
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .navbar2 {
+    width: auto;
+    height: auto;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1em;
+    margin: auto;
+    padding: 5px ;
+  }
+  
+  .logo2 {
+    width: auto;
+    height: 100px;
+    cursor: pointer;
+  }
+  
+  .side-nav {
+    width: 250px;
+    height: 163%;
+    margin-top: 116px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(109, 100, 100, 0.178);
+    backdrop-filter: blur(5px);
+  
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .user h2 {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  .user-img {
+    width: 70px;
+    border-radius: 50%;
+    margin: auto;
+    margin-left: -5%;
+  }
+  
+  .verified-img {
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .side-nav ul {
+    list-style: none;
+    padding: 0 15px;
+    height: auto;
+  }
+  
+  .side-nav ul li {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+  }
+  
+  .side-nav ul li:hover {
+    background: #69646458;
+    border-radius: 4%;
+  }
+  
+  .side-nav ul li img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .side-nav ul li p {
+    white-space: nowrap;
+  }
+  
+  .card-container {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  
+  }
+  .card-container2 {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 5px solid #009688;
+    padding-bottom: 20px;
+  }
+  .card-container3 {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 5px solid #009688;
+    padding-bottom: 20px;
+  }
+  .card-container4 {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 5px solid #009688;
+    padding-bottom: 20px;
+  }
+  
+  .card-container5 {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  
+  }
+  form {
+    max-width: 250px;
+    margin-right: auto;
+  
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    border: 1px solid #009688;
+    border-radius: 4px;
+  }
+  
+  .button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  button[type="Water"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="Water"]:hover {
+    background-color: #45a049;
+  }
+  
+  button[type="red"] {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="red"]:hover {
+    background-color: #c01717;
+  }
+  
+  .form-group{
+    
+    margin-top: 50px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .main{
+    margin-left: 280px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 30px;
+  
+  }
+  
+  .sensors-data {
+    margin-left: 100px;
+  }
+  .sensors-data p{
+    margin: 0;
+  }
+  .real-time{ 
+    margin-left: 50px;
+  } 
+  
+  .rq-container {
+  
+    align-items: center;
+    margin-top: 0px;
+  }
+  
+  .searchBox {
+  
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+  }
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  #plantList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  #plantList li {
+    display: flex;
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;  
+    width: 100px;
+    font-size: 15px;
+  }
+  #plantList li:hover {
+    background-color: #f0f0f0;
+  }
+  #displayArea {
+    border: 5px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 19px;
+  }
+  
+  /* PIPE 2 */
+  .searchBox2 {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+  }
+  #plantList2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #plantList2 li {
+    display: flex;
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;  
+    width: 100px;
+    font-size: 15px;
+  }
+  #plantList2 li:hover {
+    background-color: #f0f0f0;
+  }
+  #displayArea2 {
+    border: 5px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 19px;
+  }
+  
+  /* PIPE 3 */
+  .searchBox3 {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+  }
+  #plantList3 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #plantList3 li {
+    display: flex;
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;  
+    width: 100px;
+    font-size: 15px;
+  }
+  #plantList3 li:hover {
+    background-color: #f0f0f0;
+  }
+  #displayArea3 {
+    border: 5px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 19px;
+  }
+  
+  /* PIPE 4 */
+  .searchBox4 {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+  }
+  #plantList4 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #plantList4 li {
+    display: flex;
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;  
+    width: 100px;
+    font-size: 15px;
+  }
+  #plantList4 li:hover {
+    background-color: #f0f0f0;
+  }
+  #displayArea4 {
+    border: 5px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 19px;
+  }
+  
+  /* DATA ANALYTICS */
+  
+  .dailytemp-chart{
+    border: 2px solid #009688;
+  }
+  
+  .hourlytemp-chart{
+    border: 2px solid #009688;
+  
+  }
+  
+  .dailywater-chart{
+    border: 2px solid #009688;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; 
+  }

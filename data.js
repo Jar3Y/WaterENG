@@ -30,6 +30,8 @@ const dailyTempChart = new Chart(ctx, {
     options: {
         scales: {
             y: {
+                suggestedMin: 0, // Set the minimum value for the y-axis
+                suggestedMax: 60, // Set the maximum value for the y-axis
                 beginAtZero: true
             }
         }

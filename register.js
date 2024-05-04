@@ -47,6 +47,7 @@ createUserWithEmailAndPassword(auth, email, password)
     await setDoc(ref, {
         Name: name ,
         Email: email ,
+        Password: password
     })
     alert("Created Account!")
     window.location.href ="login.html";
