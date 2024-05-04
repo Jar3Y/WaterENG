@@ -20,6 +20,11 @@
     <div class="container2">
       <div class="navbar2">
         <img src="images\logo.jpg" class="logo2" />
+        <div class="hamburger-btn" onclick="toggleSideNav()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
       <div class="side-nav">
         <div class="user">
@@ -71,9 +76,16 @@
               <canvas id="hourlyTempChart" width="600" height="300"></canvas>
             </div>
           </div>
+          <div class="card-container6">
           <div class="dailywater-chart">
             <canvas id="dailyWaterChart" width="600" height="300"></canvas>
           </div>
           </div>
+          <script>
+            function toggleSideNav() {
+              var sideNav = document.querySelector(".side-nav");
+              sideNav.classList.toggle("active");
+            }
+          </script>
   </body>
 </html>

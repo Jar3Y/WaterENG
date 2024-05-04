@@ -20,6 +20,11 @@
     <div class="container2">
       <div class="navbar2">
         <img src="images\logo.jpg" class="logo2" />
+        <div class="hamburger-btn" onclick="toggleSideNav()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
       <div class="side-nav">
         <div class="user">
@@ -53,9 +58,9 @@
           >
 
           <li class="logout" id="logout" type="button" onclick="logout()">
-                <img src="images/logout.png" />
-                <p>Logout</p>
-              </li>
+            <img src="images/logout.png" />
+            <p>Logout</p>
+          </li>
         </ul>
       </div>
       <div class="main">
@@ -64,7 +69,6 @@
         <h3 class="all-pipe">First Pipe:</h3>
         <div class="card-container">
           <div class="SC-flex-container">
-            
             <h4>Select Crops</h4>
             <input
               type="text"
@@ -191,5 +195,11 @@
         </div>
       </div>
     </div>
+    <script>
+      function toggleSideNav() {
+        var sideNav = document.querySelector(".side-nav");
+        sideNav.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

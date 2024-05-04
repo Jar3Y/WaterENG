@@ -448,3 +448,63 @@ body {
     flex-direction: column;
     margin-top: 10px; 
   }
+
+  /* Style hamburger button */
+.hamburger-btn {
+  display: none; /* Initially hide on larger screens */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .logo2 {
+    width: auto;
+    height: 60px;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .hamburger-btn {
+    display: block; /* Show hamburger button on smaller screens */
+  }
+  
+  /* Hide side-nav by default */
+  .side-nav {
+    display: none; /* Hide side-nav by default on smaller screens */
+    width: 250px;
+    height: auto;
+    margin-top: 123px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(0, 0, 0, 0.178);
+    background-color: rgb(219, 216, 212);
+  
+  }
+  
+  /* Show side-nav when hamburger button is clicked */
+  .side-nav.active {
+    display: block;
+  }
+  
+  /* Adjust main content when side-nav is active */
+  .main {
+    margin-left: 0; /* Push main content to the left when side-nav is active */
+  }
+  .sensors-data{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
