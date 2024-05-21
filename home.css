@@ -282,7 +282,27 @@ h4{
 .all-pipe{
   margin-bottom: 20px;
 }
+#message{
+  margin-top: 20px;
+}
+#message2{
+  margin-top: 20px;
+}
 
+#message3{
+  margin-top: 20px;
+}
+
+#message4{
+  margin-top: 20px;
+}
+
+.status-watered {
+  color: red;
+}
+.status-ok {
+  color: green;
+}
 
 /* PIPE 2 */
 .searchBox2 {

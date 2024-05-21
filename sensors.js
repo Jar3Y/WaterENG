@@ -132,3 +132,74 @@ dataRef16.on('value', function(snapshot) {
   document.getElementById('waterFlow4').innerHTML = "Water Flow Rate: " + wf4 + "L/hr";
 });
 
+// PLANT STATUS //
+var messageRef = firebase.database().ref('/messages');
+
+// Listen for changes to the messages node
+messageRef.on('value', (snapshot) => {
+  const data = snapshot.val();
+  if (data && data.status) {
+    document.getElementById('message').innerText = "Plant Status: " + data.status;
+    
+    // Change the text color based on the message
+    if (data.status.includes("Watering the plant")) {
+      document.getElementById('message').style.color = 'red';
+    } else {
+      document.getElementById('message').style.color = 'green';
+    }
+  }
+});
+
+var messageRef2 = firebase.database().ref('/messages');
+
+// Listen for changes to the messages node
+messageRef2.on('value', (snapshot) => {
+  const data = snapshot.val();
+  if (data && data.status) {
+    document.getElementById('message2').innerText = "Plant Status: " + data.status;
+    
+    // Change the text color based on the message
+    if (data.status.includes("Watering the plant")) {
+      document.getElementById('message2').style.color = 'red';
+    } else {
+      document.getElementById('message2').style.color = 'green';
+    }
+  }
+});
+
+var messageRef3 = firebase.database().ref('/messages');
+
+// Listen for changes to the messages node
+messageRef3.on('value', (snapshot) => {
+  const data = snapshot.val();
+  if (data && data.status) {
+    document.getElementById('message3').innerText = "Plant Status: " + data.status;
+    
+    // Change the text color based on the message
+    if (data.status.includes("Watering the plant")) {
+      document.getElementById('message3').style.color = 'red';
+    } else {
+      document.getElementById('message3').style.color = 'green';
+    }
+  }
+});
+
+var messageRef4 = firebase.database().ref('/messages');
+
+// Listen for changes to the messages node
+messageRef4.on('value', (snapshot) => {
+  const data = snapshot.val();
+  if (data && data.status) {
+    document.getElementById('message4').innerText = "Plant Status: " + data.status;
+    
+    // Change the text color based on the message
+    if (data.status.includes("Watering the plant")) {
+      document.getElementById('message4').style.color = 'red';
+    } else {
+      document.getElementById('message4').style.color = 'green';
+    }
+  }
+});
+
+
+
